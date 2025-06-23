@@ -1,68 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Mahfuz’s Kitchen - Menu</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mahfuz’s Kitchen - Menu</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Header & Nav -->
-    <header>
-        <div class="logo">🍛 Mahfuz’s Kitchen</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="menu.html" class="order-btn">Order Online</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Header & Nav -->
+  <header>
+    <div class="logo">🍛 Mahfuz’s Kitchen</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="menu.html" class="order-btn">Order Online</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Menu Section -->
-    <section class="menu">
-        <h2>Our Menu</h2>
-        <table>
-            <tr>
-                <th>Dish</th>
-                <th>Price</th>
-            </tr>
-            <tr>
-                <td>Butter Chicken</td>
-                <td>$12.99</td>
-            </tr>
-            <tr>
-                <td>Chicken Biryani</td>
-                <td>$10.99</td>
-            </tr>
-            <tr>
-                <td>Paneer Tikka</td>
-                <td>$9.99</td>
-            </tr>
-            <tr>
-                <td>Garlic Naan</td>
-                <td>$3.99</td>
-            </tr>
-            <tr>
-                <td>Masala Dosa</td>
-                <td>$8.99</td>
-            </tr>
-            <tr>
-                <td>Mango Lassi</td>
-                <td>$4.99</td>
-            </tr>
-        </table>
-    </section>
+  <!-- Menu Section -->
+  <section class="menu">
+    <h2>Our Menu</h2>
+    <table>
+      <tr>
+        <th>Dish</th>
+        <th>Price</th>
+        <th>Add</th>
+      </tr>
+      <tr>
+        <td>Butter Chicken</td>
+        <td>$12.99</td>
+        <td><button class="add-to-cart" data-name="Butter Chicken" data-price="12.99">Add to Cart</button></td>
+      </tr>
+      <tr>
+        <td>Chicken Biryani</td>
+        <td>$10.99</td>
+        <td><button class="add-to-cart" data-name="Chicken Biryani" data-price="10.99">Add to Cart</button></td>
+      </tr>
+      <tr>
+        <td>Paneer Tikka</td>
+        <td>$9.99</td>
+        <td><button class="add-to-cart" data-name="Paneer Tikka" data-price="9.99">Add to Cart</button></td>
+      </tr>
+      <tr>
+        <td>Garlic Naan</td>
+        <td>$3.99</td>
+        <td><button class="add-to-cart" data-name="Garlic Naan" data-price="3.99">Add to Cart</button></td>
+      </tr>
+      <tr>
+        <td>Masala Dosa</td>
+        <td>$8.99</td>
+        <td><button class="add-to-cart" data-name="Masala Dosa" data-price="8.99">Add to Cart</button></td>
+      </tr>
+      <tr>
+        <td>Mango Lassi</td>
+        <td>$4.99</td>
+        <td><button class="add-to-cart" data-name="Mango Lassi" data-price="4.99">Add to Cart</button></td>
+      </tr>
+    </table>
 
-    <!-- Footer -->
-    <footer>
-        <p>Follow us on:
-            <a href="#">Facebook</a> |
-            <a href="#">Instagram</a>
-        </p>
-        <p>Business Hours: 11AM - 11PM Daily</p>
-    </footer>
+    <h3>Your Cart</h3>
+    <div id="cart"></div>
+    <p id="total">Total: $0.00</p>
+    <button id="clear-cart">Clear Cart</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Follow us on:
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a>
+    </p>
+    <p>Business Hours: 11AM - 11PM Daily</p>
+  </footer>
+
+  <!-- Cart Script -->
+  <script src="cart.js"></script>
 </body>
 </html>
+
