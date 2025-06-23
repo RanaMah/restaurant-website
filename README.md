@@ -5,7 +5,7 @@ Built as part of my Web Development Homework.
 
 ## 🚀 Live Site
 
-👉 [Click here to visit the site!](https://ranamah.github.io/restaurant-website/)
+👉 [Click here to visit the site!](https://ranamah.github.io/restaurant-website/menu.html)
 
 ## ✨ Features
 
